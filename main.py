@@ -1,6 +1,6 @@
-from jogos import (salvar_jogos)
-from locacoes import (registro_locacoes)
-from clientes import( cadastro_clientes)
+from jogos import (add_jogos)
+from locacoes import (add_locacoes)
+from clientes import(cadastro_clientes)
 from persistencia import(
     carregar_clientes,
     carregar_jogos,
@@ -14,11 +14,11 @@ def menu():
         cod = int(input("Insira aqui: "))
 
         if cod == 1:
-            salvar_jogos()
+            add_jogos()
         elif cod == 2:
             cadastro_clientes()
         elif cod == 3:
-            registro_locacoes()
+            add_locacoes()
         elif cod == 4:
             carregar_jogos()
         elif cod == 5:

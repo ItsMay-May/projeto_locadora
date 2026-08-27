@@ -7,14 +7,14 @@ def salvar_jogos(add_jogos):
 
 def carregar_jogos():
     try:
-        with open ('clientes.json', 'r', encoding="ut-8") as arquivo:
+        with open ('clientes.json', 'r', encoding="utf-8") as arquivo:
             return json.load(arquivo)
     except FileNotFoundError:
         return []
 
 
 def salvar_clientes(cadastro_clientes):
-    with open('clientes.json', 'r', encoding="utf=8") as arquivo:
+    with open('clientes.json', 'w', encoding="utf-8") as arquivo:
         json.dump(cadastro_clientes, arquivo, indent=4)
 
 def carregar_clientes():
