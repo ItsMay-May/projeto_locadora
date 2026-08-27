@@ -1,12 +1,13 @@
 from persistencia import registro_locacoes
+from jogos import jogos
 
 
 locacoes = []
 
 
-def registro_locacoes(jogo, dias):
-    valor = jogo['valor']
-    dias = jogo['dias']
+def add_locacoes(jogo):
+    valor = jogos['valor']
+    dias = jogos['dias']
     total = (valor * dias)
     desconto = 0
 

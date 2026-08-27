@@ -1,8 +1,8 @@
-from persistencia import cadastro_clientes
+from persistencia import salvar_clientes
 
 clientes = []
 
-def cadastro_clientes(nome, data_nascimento, cpf,):
+def cadastro_clientes():
     
     nome = input("Nome do cliente: ")
     data_nascimento = input("Data de nascimento: ")
@@ -15,4 +15,5 @@ def cadastro_clientes(nome, data_nascimento, cpf,):
     }
 
     clientes.append(cliente)
-    cadastro_clientes(clientes)
+    salvar_clientes(clientes)
+

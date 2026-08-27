@@ -10,8 +10,8 @@ from persistencia import(
 def menu():
     while(True):
         print("---Bem vindo a locadora do Tiago Postgres, escolha uma das opções abaixo:---")
-        print("\n1-Cadastrar jogos \n2-Cadastrar novo cliente \n-Registrar locação \n4-Listar jogos disponíveis \n5- Ver clientes cadastrados \n6-Ver resistros de locações \n7- Sair")
-        cod = input("Insira aqui: ")
+        print("\n1-Cadastrar jogos \n2-Cadastrar novo cliente \n3-Registrar locação \n4-Listar jogos disponíveis \n5- Ver clientes cadastrados \n6-Ver resistros de locações \n7- Sair")
+        cod = int(input("Insira aqui: "))
 
         if cod == 1:
             salvar_jogos()
@@ -31,3 +31,4 @@ def menu():
         else:
             print("Número inválido! Tente novamente.")
             continue
+menu()
