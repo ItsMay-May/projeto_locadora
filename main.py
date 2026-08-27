@@ -20,6 +20,7 @@ def menu():
         elif cod == 3:
             add_locacoes()
         elif cod == 4:
+        
             carregar_jogos()
         elif cod == 5:
             carregar_clientes()
