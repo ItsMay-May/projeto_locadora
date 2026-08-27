@@ -7,6 +7,7 @@ locacoes = []
 def registro_locacoes(jogo, dias):
     valor = jogo['valor']
     dias = jogo['dias']
+    total = (valor * dias)
     desconto = 0
 
     if dias > 7:
@@ -15,7 +16,7 @@ def registro_locacoes(jogo, dias):
         desconto = valor * 0.05
 
         
-    locacao = {'jogo': jogo, 'dias': dias, 'total': (valor - desconto)}
+    locacao = {'jogo': jogo, 'dias': dias, 'total': (total - desconto)}
     locacoes.append(locacao)
     registro_locacoes(locacoes)
 

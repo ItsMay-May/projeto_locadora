@@ -28,3 +28,6 @@ def menu():
         elif cod == 7:
             print("Saindo ...")
             break
+        else:
+            print("Número inválido! Tente novamente.")
+            continue
